@@ -18,6 +18,7 @@ INSERT INTO ledger_types (ledger_type, ledger_type_description) VALUES
 ('ASSET',     'Economic resources controlled by the system'),
 ('LIABILITY', 'Obligations owed to external entities'),
 ('EQUITY',    'System net value and retained earnings'),
+('INCOME',  'Fee'),
 ('CLEARING',  'Temporary balancing and reconciliation accounts')
 ON CONFLICT (ledger_type) DO NOTHING;
 
